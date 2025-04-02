@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <div class="sidebar">
+            <div class="sidebar-logo">
+                <h2>Admin Panel</h2>
+            </div>
+            <ul class="sidebar-nav">
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="#" id="user-management-btn">User Management</a></li>
+                <li><a href="#">System Settings</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Analytics</a></li>
+            </ul>
+        </div>
+        
+        <div class="main-content">
+            <div class="dashboard-header">
+                <h1>Welcome, Admin Taha</h1>
+                <div>
+                    <span id="system-clock" class="system-clock"></span>
+                    <a href="login.html" class="logout-btn">Logout</a>
+                </div>
+            </div>
+
+            <div class="admin-stats">
+                <div class="stat-card">
+                    <h3>Total Users</h3>
+                    <div class="stat-number" id="total-users-stat">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Active Users</h3>
+                    <div class="stat-number" id="active-users-stat">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>System Health</h3>
+                    <div class="stat-number">98%</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Active Sessions</h3>
+                    <div class="stat-number">42</div>
+                </div>
+            </div>
+
+            <div class="quick-actions">
+                <h2>Quick Actions</h2>
+                <div class="action-buttons">
+                    <button id="user-management-btn" class="action-btn">User Management</button>
+                    <button id="generate-report-btn" class="action-btn">Generate Report</button>
+                    <button id="system-backup-btn" class="action-btn">System Backup</button>
+                </div>
+                <div id="backup-progress-container" class="backup-progress-container">
+                    <progress id="backup-progress" class="backup-progress" value="0" max="100" style="display:none;"></progress>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- User Management Modal -->
+    <div id="user-management-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span id="close-modal" class="close-modal">&times;</span>
+            <h2>User Management</h2>
+            
+            <!-- Add User Form -->
+            <form id="add-user-form" class="add-user-form">
+                <h3>Add New User</h3>
+                <input type="text" id="new-username" placeholder="Username" required>
+                <input type="email" id="new-email" placeholder="Email" required>
+                <select id="new-role" required>
+                    <option value="">Select Role</option>
+                    <option value="Admin">Admin</option>
+                    <option value="Dispatcher">Dispatcher</option>
+                    <option value="Officer">Officer</option>
+                </select>
+                <button type="submit">Add User</button>
+            </form>
+
+            <!-- User Table -->
+            <table class="user-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Role</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="user-table-body">
+                    <!-- Users will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

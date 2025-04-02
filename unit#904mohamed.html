@@ -1,0 +1,1822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Law Enforcement Mobile Data Terminal</title>
+  <link rel="stylesheet" href="mdt.css">
+</head>
+<body>
+  <div class="mdt-container">
+    <!-- Sidebar -->
+    <aside class="mdt-sidebar">
+      <div class="mdt-sidebar-header">
+        
+        <div>
+          <strong>mohammed imhamed</strong>
+          <div class="badge-number">Badge #904</div>
+          <div class="Rank">Private First Class</div>
+        </div>
+      </div>
+
+      <nav>
+        <ul class="mdt-nav">
+          <li class="mdt-nav-item">
+            <a href="#" class="mdt-nav-link active" data-page="dashboard">
+              <svg class="icon" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="currentColor" d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+              </svg>
+              Dashboard
+            </a>
+          </li>
+          <li class="mdt-nav-item">
+            <a href="#" class="mdt-nav-link" data-page="active-calls">
+              <svg class="icon" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="currentColor" d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.26.36-.65.25-1C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1zM19 12h2c0-4.97-4.03-9-9-9v2c3.87 0 7 3.13 7 7zm-4 0h2c0-2.76-2.24-5-5-5v2c1.66 0 3 1.34 3 3z"/>
+              </svg>
+              Active Calls
+            </a>
+          </li>
+          <li class="mdt-nav-item">
+            <a href="#" class="mdt-nav-link" data-page="persons">
+              <svg class="icon" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="currentColor" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+              </svg>
+              Persons
+            </a>
+          </li>
+          <li class="mdt-nav-item">
+            <a href="#" class="mdt-nav-link" data-page="vehicles">
+              <svg class="icon" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="currentColor" d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.08 3.11H5.77L6.85 7zM19 17H5v-5h14v5z"/>
+                <circle fill="currentColor" cx="7.5" cy="14.5" r="1.5"/>
+                <circle fill="currentColor" cx="16.5" cy="14.5" r="1.5"/>
+              </svg>
+              Vehicles
+            </a>
+          </li>
+          <li class="mdt-nav-item">
+            <a href="#" class="mdt-nav-link" data-page="reports">
+              <svg class="icon" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="currentColor" d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+              </svg>
+              Reports
+            </a>
+          </li>
+          <li class="mdt-nav-item">
+            <a href="#" class="mdt-nav-link" data-page="bulletins">
+              <svg class="icon" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="currentColor" d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 9h-2V5h2v6zm0 4h-2v-2h2v2z"/>
+              </svg>
+              Bulletins
+            </a>
+          </li>
+          <li class="mdt-nav-item">
+            <a href="#" class="mdt-nav-link" data-page="map">
+              <svg class="icon" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="currentColor" d="M20.5 3l-.16.03L15 5.1 9 3 3.36 4.9c-.21.07-.36.25-.36.48V20.5c0 .28.22.5.5.5l.16-.03L9 18.9l6 2.1 5.64-1.9c.21-.07.36-.25.36-.48V3.5c0-.28-.22-.5-.5-.5zM15 19l-6-2.11V5l6 2.11V19z"/>
+              </svg>
+              Map
+            </a>
+          </li>
+          <li class="mdt-nav-item">
+            <a href="#" class="mdt-nav-link" data-page="warrants">
+              <svg class="icon" viewBox="0 0 24 24" width="24" height="24">
+                <path fill="currentColor" d="M14 6l-3.75 5 2.85 3.8-1.6 1.2C9.81 13.75 7 10 7 10l-6 8h22L14 6z"/>
+              </svg>
+              Warrants
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="sidebar-footer">
+        <div class="system-status">
+          <div class="status-dot online"></div>
+          <span>System Online</span>
+        </div>
+        <div class="connection-info">
+          <small>CAD/RMS v3.4.21</small>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="mdt-main">
+      <header class="mdt-header">
+        <h1 id="page-title">Mobile Data Terminal</h1>
+        <div class="header-status">
+          <span class="status-indicator online">10-8 | On Duty</span>
+          <button class="mdt-action-button" id="toggle-duty-btn">Change Status</button>
+          <button class="mdt-action-button logout" id="logout-btn">Logout</button>
+        </div>
+      </header>
+
+      <!-- Page Content -->
+      <div id="page-content">
+        <!-- Dashboard Page -->
+        <div class="mdt-page active" id="dashboard-page">
+          <!-- Dashboard Grid Layout -->
+          <div class="dashboard-grid">
+            <!-- Quick Search Panel -->
+            <div class="dashboard-panel search-panel">
+              <div class="panel-header">
+                <h3>Quick Search</h3>
+              </div>
+              <div class="panel-content">
+                <div class="mdt-search-input-group">
+                  <input 
+                    type="text" 
+                    id="search-input" 
+                    class="mdt-search-input" 
+                    placeholder="Name, Plate, Case #"
+                  >
+                  <select id="search-type" class="mdt-search-type">
+                    <option value="person">Person</option>
+                    <option value="vehicle">Vehicle</option>
+                    <option value="report">Report</option>
+                    <option value="case">Case</option>
+                  </select>
+                  <button id="search-button" class="mdt-search-button">Search</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Department Activity Panel -->
+            <div class="dashboard-panel activity-panel">
+              <div class="panel-header">
+                <h3>Department Activity</h3>
+                <span class="badge">Live</span>
+              </div>
+              <div class="panel-content">
+                <div class="activity-stats">
+                  <div class="stat-item">
+                    <div class="stat-value">15</div>
+                    <div class="stat-label">Active Units</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-value">7</div>
+                    <div class="stat-label">Active Calls</div>
+                  </div>
+                  <div class="stat-item highlight">
+                    <div class="stat-value">3</div>
+                    <div class="stat-label">Priority Calls</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-value">21</div>
+                    <div class="stat-label">Reports Today</div>
+                  </div>
+                </div>
+                <div class="activity-chart-container">
+                  <canvas id="activityChart"></canvas>
+                </div>
+              </div>
+            </div>
+
+            <!-- Recent Activity Panel -->
+            <div class="dashboard-panel recent-panel">
+              <div class="panel-header">
+                <h3>Recent Activity</h3>
+                <button class="refresh-button" id="refresh-activity-btn">↻</button>
+              </div>
+              <div class="panel-content">
+                <div class="activity-feed">
+                  <div class="activity-item">
+                    <span class="activity-time">10:45 AM</span>
+                    <span class="activity-badge arrest">ARREST</span>
+                    <span class="activity-text">Officer Wilson - DUI Arrest at 5th & Main</span>
+                  </div>
+                  <div class="activity-item">
+                    <span class="activity-time">10:38 AM</span>
+                    <span class="activity-badge incident">INCIDENT</span>
+                    <span class="activity-text">Vehicle accident reported at Highway 101 N</span>
+                  </div>
+                  <div class="activity-item">
+                    <span class="activity-time">10:30 AM</span>
+                    <span class="activity-badge call">911 CALL</span>
+                    <span class="activity-text">Domestic disturbance at 123 Elm Street</span>
+                  </div>
+                  <div class="activity-item">
+                    <span class="activity-time">10:22 AM</span>
+                    <span class="activity-badge report">REPORT</span>
+                    <span class="activity-text">Officer Johnson filed report #24-0578</span>
+                  </div>
+                  <div class="activity-item">
+                    <span class="activity-time">10:15 AM</span>
+                    <span class="activity-badge arrest">ARREST</span>
+                    <span class="activity-text">Officer Davis - Shoplifting at Downtown Mall</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Crime Statistics Panel -->
+            <div class="dashboard-panel stats-panel">
+              <div class="panel-header">
+                <h3>Crime Statistics</h3>
+                <div class="panel-controls">
+                  <select id="stats-period">
+                    <option value="day">24 Hours</option>
+                    <option value="week" selected>This Week</option>
+                    <option value="month">This Month</option>
+                    <option value="year">This Year</option>
+                  </select>
+                </div>
+              </div>
+              <div class="panel-content">
+                <div class="stat-charts-container">
+                  <div class="pie-chart-container">
+                    <canvas id="crimeTypesChart"></canvas>
+                  </div>
+                  <div class="bar-chart-container">
+                    <canvas id="crimeLocationChart"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Unit Status Panel -->
+            <div class="dashboard-panel unit-status-panel">
+              <div class="panel-header">
+                <h3>Unit Status</h3>
+              </div>
+              <div class="panel-content">
+                <div class="unit-map-container">
+                  <div class="unit-map" id="unitMap">
+                    <!-- Map will be rendered here via JS -->
+                     
+                    <div class="map-overlay">Map View</div>
+                    <div class="map-pins">
+                      <div class="map-pin" style="top: 30%; left: 45%;" data-unit="Unit 12">
+                        <div class="pin available"></div>
+                      </div>
+                      <div class="map-pin" style="top: 45%; left: 60%;" data-unit="Unit 15">
+                        <div class="pin busy"></div>
+                      </div>
+                      <div class="map-pin" style="top: 65%; left: 35%;" data-unit="Unit 8">
+                        <div class="pin responding"></div>
+                      </div>
+                      <div class="map-pin" style="top: 25%; left: 70%;" data-unit="Unit 4">
+                        <div class="pin available"></div>
+                      </div>
+                      <div class="map-pin" style="top: 55%; left: 80%;" data-unit="Unit 9">
+                        <div class="pin busy"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="unit-list">
+                  <div class="unit-item available">
+                    <span class="unit-id">Unit 4</span>
+                    <span class="unit-officer">Ofc. Martinez</span>
+                    <span class="unit-status">Available</span>
+                  </div>
+                  <div class="unit-item available">
+                    <span class="unit-id">Unit 12</span>
+                    <span class="unit-officer">Ofc. Johnson</span>
+                    <span class="unit-status">Available</span>
+                  </div>
+                  <div class="unit-item busy">
+                    <span class="unit-id">Unit 9</span>
+                    <span class="unit-officer">Ofc. Taylor</span>
+                    <span class="unit-status">On Scene</span>
+                  </div>
+                  <div class="unit-item busy">
+                    <span class="unit-id">Unit 15</span>
+                    <span class="unit-officer">Sgt. Williams</span>
+                    <span class="unit-status">Traffic Stop</span>
+                  </div>
+                  <div class="unit-item responding">
+                    <span class="unit-id">Unit 8</span>
+                    <span class="unit-officer">Ofc. Brown</span>
+                    <span class="unit-status">Responding</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Search Results (hidden until search is performed) -->
+            <div class="dashboard-panel search-results-panel" id="search-results-panel">
+              <div class="panel-header">
+                <h3>Search Results</h3>
+                <button class="close-button" id="close-search-btn">×</button>
+              </div>
+              <div class="panel-content">
+                <div id="search-results">
+                  <div id="results-placeholder" class="mdt-placeholder">
+                    Search results will appear here
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+              
+              
+            </a>
+          </li>
+        </ul>
+      </nav>
+      
+      <div class="sidebar-footer">
+        <div class="system-status">
+          <div class="status-dot online"></div>
+          <span></span>
+        </div>
+        <div class="connection-info">
+          <small>CAD/RMS v3.4.21</small>
+        </div>
+      </div>
+    </aside>
+
+      
+
+            
+
+            
+           
+
+           
+        <!-- Active Calls Page -->
+        <div class="mdt-page" id="active-calls-page">
+          <div class="mdt-section-header">
+            <h2>Active Emergency Calls</h2>
+            <button class="mdt-action-button" id="refresh-calls-btn">Refresh Calls</button>
+          </div>
+
+          <div class="mdt-calls-list">
+            <div class="mdt-call-item priority-high">
+              <div class="call-info">
+                <div class="call-id">ID: #24-1572</div>
+                <div class="call-type">Robbery in Progress</div>
+                <div class="call-location">185 Oak Street, Downtown</div>
+                <div class="call-time">Received: 10:32 AM (4 min ago)</div>
+              </div>
+              <div class="call-actions">
+                <button class="mdt-action-button respond-btn">Respond</button>
+                <button class="mdt-action-button details-btn">Details</button>
+              </div>
+            </div>
+
+            <div class="mdt-call-item priority-medium">
+              <div class="call-info">
+                <div class="call-id">ID: #24-1571</div>
+                <div class="call-type">Traffic Accident</div>
+                <div class="call-location">Main St & 5th Ave</div>
+                <div class="call-time">Received: 10:28 AM (8 min ago)</div>
+              </div>
+              <div class="call-actions">
+                <button class="mdt-action-button respond-btn">Respond</button>
+                <button class="mdt-action-button details-btn">Details</button>
+              </div>
+            </div>
+
+            <div class="mdt-call-item priority-low">
+              <div class="call-info">
+                <div class="call-id">ID: #24-1570</div>
+                <div class="call-type">Noise Complaint</div>
+                <div class="call-location">472 Pine Apartments, Unit 3B</div>
+                <div class="call-time">Received: 10:15 AM (21 min ago)</div>
+              </div>
+              <div class="call-actions">
+                <button class="mdt-action-button respond-btn">Respond</button>
+                <button class="mdt-action-button details-btn">Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Persons Page -->
+        <div class="mdt-page" id="persons-page">
+          <div class="mdt-search-container">
+            <div class="mdt-search-input-group">
+              <input 
+                type="text" 
+                id="persons-search-input" 
+                class="mdt-search-input" 
+                placeholder="Search by name, ID, or DOB"
+              >
+              <button id="persons-search-btn" class="mdt-search-button">Search</button>
+            </div>
+          </div>
+
+          <div class="mdt-results-container">
+            <div class="mdt-person-profile">
+              <div class="profile-header">
+                <img src="/api/placeholder/100/100" alt="Profile Photo" class="profile-photo">
+                <div class="profile-info">
+                  <h3>John Robert Doe</h3>
+                  <div class="profile-details">
+                    <span>DOB: 03/15/1985 (40)</span>
+                    <span>ID: 850315-4721</span>
+                    <span class="status-flag warning">Flagged: Prior Arrests</span>
+                  </div>
+                </div>
+              </div>
+              <div class="profile-content">
+                <div class="info-section">
+                  <h4>Personal Information</h4>
+                  <div class="info-grid">
+                    <div class="info-item">
+                      <span class="label">Address:</span>
+                      <span>123 Main St, Anytown, USA</span>
+                    </div>
+                    <div class="info-item">
+                      <span class="label">Phone:</span>
+                      <span>(555) 123-4567</span>
+                    </div>
+                    <div class="info-item">
+                      <span class="label">License:</span>
+                      <span>D123456789 (Valid)</span>
+                    </div>
+                    <div class="info-item">
+                      <span class="label">Height/Weight:</span>
+                      <span>5'11" / 180 lbs</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="history-section">
+                  <h4>History</h4>
+                  <div class="history-tabs">
+                    <button class="tab-button active" data-tab="arrests">Arrests</button>
+                    <button class="tab-button" data-tab="citations">Citations</button>
+                    <button class="tab-button" data-tab="incidents">Incidents</button>
+                  </div>
+                  <div class="tab-content active" id="arrests-tab">
+                    <div class="history-item">
+                      <div class="date">02/15/2023</div>
+                      <div class="description">Possession of Controlled Substance</div>
+                      <button class="mdt-action-button small view-btn">View</button>
+                    </div>
+                    <div class="history-item">
+                      <div class="date">08/23/2021</div>
+                      <div class="description">DUI - Blood Alcohol 0.11</div>
+                      <button class="mdt-action-button small view-btn">View</button>
+                    </div>
+                  </div>
+                  <div class="tab-content" id="citations-tab">
+                    <div class="history-item">
+                      <div class="date">11/04/2023</div>
+                      <div class="description">Speeding (78/55)</div>
+                      <button class="mdt-action-button small view-btn">View</button>
+                    </div>
+                    <div class="history-item">
+                      <div class="date">05/17/2022</div>
+                      <div class="description">Expired Registration</div>
+                      <button class="mdt-action-button small view-btn">View</button>
+                    </div>
+                  </div>
+                  <div class="tab-content" id="incidents-tab">
+                    <div class="history-item">
+                      <div class="date">03/10/2024</div>
+                      <div class="description">Witness in Hit and Run (Case #24-0327)</div>
+                      <button class="mdt-action-button small view-btn">View</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="profile-actions">
+                <button class="mdt-action-button new-citation-btn">New Citation</button>
+                <button class="mdt-action-button new-report-btn">New Report</button>
+                <button class="mdt-action-button print-btn">Print Record</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vehicles Page -->
+        <div class="mdt-page" id="vehicles-page">
+          <div class="mdt-search-container">
+            <div class="mdt-search-input-group">
+              <input 
+                type="text" 
+                id="vehicle-search-input" 
+                class="mdt-search-input" 
+                placeholder="Enter license plate, VIN, or make/model"
+              >
+              <button id="vehicle-search-btn" class="mdt-search-button">Search</button>
+            </div>
+          </div>
+
+          <div class="mdt-results-container" id="vehicle-results">
+            <div class="mdt-placeholder">
+              Vehicle information will appear here
+            </div>
+          </div>
+        </div>
+
+        <!-- Reports Page -->
+        <div class="mdt-page" id="reports-page">
+          <div class="mdt-section-header">
+            <h2>Reports Management</h2>
+            <button class="mdt-action-button create-report-btn">Create New Report</button>
+          </div>
+
+          <div class="mdt-reports-tabs">
+            <button class="tab-button active" data-tab="my-reports">My Reports</button>
+            <button class="tab-button" data-tab="pending-approval">Pending Approval</button>
+            <button class="tab-button" data-tab="recent-reports">Recent Department Reports</button>
+          </div>
+
+          <div class="tab-content active" id="my-reports-tab">
+            <div class="mdt-reports-list">
+              <div class="mdt-report-item">
+                <div class="report-info">
+                  <div class="report-id">Case #24-0572</div>
+                  <div class="report-title">Shoplifting at Downtown Market</div>
+                  <div class="report-details">
+                    <span>Created: 03/30/2025</span>
+                    <span>Status: Draft</span>
+                  </div>
+                </div>
+                <div class="report-actions">
+                  <button class="mdt-action-button edit-btn">Edit</button>
+                  <button class="mdt-action-button submit-btn">Submit</button>
+                </div>
+              </div>
+
+              <div class="mdt-report-item">
+                <div class="report-info">
+                  <div class="report-id">Case #24-0567</div>
+                  <div class="report-title">Traffic Stop - DUI Arrest</div>
+                  <div class="report-details">
+                    <span>Created: 03/29/2025</span>
+                    <span>Status: Submitted</span>
+                  </div>
+                </div>
+                <div class="report-actions">
+                  <button class="mdt-action-button view-btn">View</button>
+                  <button class="mdt-action-button edit-btn">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="pending-approval-tab">
+            <div class="mdt-placeholder">
+              No reports pending approval
+            </div>
+          </div>
+
+          <div class="tab-content" id="recent-reports-tab">
+            <div class="mdt-placeholder">
+              Loading recent department reports...
+            </div>
+          </div>
+        </div>
+
+        <!-- Bulletins Page -->
+        <div class="mdt-page" id="bulletins-page">
+          <div class="mdt-section-header">
+            <h2>Department Bulletins</h2>
+            <div class="bulletin-controls">
+              <button class="mdt-action-button new-bulletin-btn">New Bulletin</button>
+              <select id="bulletin-filter">
+                <option value="all">All Bulletins</option>
+                <option value="bolo">BOLO</option>
+                <option value="announcement">Announcements</option>
+                <option value="alert">Alerts</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="bulletins-container">
+            <div class="bulletin-item bolo">
+              <div class="bulletin-header">
+                <div class="bulletin-type">BOLO</div>
+                <div class="bulletin-time">Posted: 03/30/2025 09:15 AM</div>
+              </div>
+              <div class="bulletin-title">Armed Robbery Suspect</div>
+              <div class="bulletin-content">
+                <p>Be on the lookout for a white male, 30-40 years old, approximately 6'0", medium build, with a distinctive dragon tattoo on right forearm. Last seen wearing a black hoodie and blue jeans.</p>
+                <p>Suspect is wanted in connection with the armed robbery at First National Bank on 03/29/2025. Suspect was armed with a handgun and should be considered dangerous.</p>
+                <div class="bulletin-attachments">
+                  <div class="attachment">
+                    <svg viewBox="0 0 24 24" width="16" height="16">
+                      <path fill="currentColor" d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"/>
+                    </svg>
+                    <span>Surveillance Image 1</span>
+                  </div>
+                  <div class="attachment">
+                    <svg viewBox="0 0 24 24" width="16" height="16">
+                      <path fill="currentColor" d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"/>
+                    </svg>
+                    <span>Surveillance Image 2</span>
+                  </div>
+                </div>
+              </div>
+              <div class="bulletin-footer">
+                <span class="bulletin-author">Issued by: Sgt. Williams</span>
+                <div class="bulletin-actions">
+                  <button class="mdt-action-button small resolved-btn">Flag as Resolved</button>
+                  <button class="mdt-action-button small add-info-btn">Add Info</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="bulletin-item announcement">
+              <div class="bulletin-header">
+                <div class="bulletin-type">Announcement</div>
+                <div class="bulletin-time">Posted: 03/29/2025 10:30 AM</div>
+              </div>
+              <div class="bulletin-title">Training Schedule Update</div>
+              <div class="bulletin-content">
+                <p>The firearms qualification scheduled for Tuesday, April 1st has been moved to Thursday, April 3rd due to range maintenance. All officers are required to attend their assigned time slot.</p>
+                <p>Please check the updated schedule on the department intranet for your assigned time.</p>
+              </div>
+              <div class="bulletin-footer">
+                <span class="bulletin-author">Issued by: Lt. Rodriguez</span>
+                <div class="bulletin-actions">
+                  <button class="mdt-action-button small acknowledge-btn">Acknowledge</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="bulletin-item alert">
+              <div class="bulletin-header">
+                <div class="bulletin-type">Alert</div>
+                <div class="bulletin-time">Posted: 03/28/2025 02:15 PM</div>
+              </div>
+              <div class="bulletin-title">System Maintenance Notice</div>
+              <div class="bulletin-content">
+                <p>The CAD/RMS system will undergo scheduled maintenance on Sunday, April 6th from 0200-0500 hours. During this time, the system may experience intermittent outages.</p>
+                <p>Please use radio communications and paper logs during this period if necessary.</p>
+              </div>
+              <div class="bulletin-footer">
+                <span class="bulletin-author">Issued by: IT Department</span>
+                <div class="bulletin-actions">
+                  <button class="mdt-action-button small acknowledge-btn">Acknowledge</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map Page -->
+        <div class="mdt-page" id="map-page">
+          <div class="map-controls">
+            <div class="map-search">
+              <input type="text" placeholder="Search address or location" class="map-search-input">
+              <button class="mdt-action-button go-btn">Go</button>
+            </div>
+            <div class="map-filter">
+              <label><input type="checkbox" checked> Active Units</label>
+              <label><input type="checkbox" checked> Active Calls</label>
+              <label><input type="checkbox"> Recent Incidents</label>
+              <label><input type="checkbox"> Traffic Cameras</label>
+            </div>
+          </div>
+
+          <div class="map-container">
+            <div class="city-map" id="cityMap">
+              <!-- Map Placeholder - Would be replaced with actual map implementation -->
+              <div class="map-grid">
+                <!-- Stylized grid and roads to simulate a map -->
+                <div class="map-roads">
+                  <div class="road horizontal" style="top: 20%"></div>
+                  <div class="road horizontal" style="top: 50%"></div>
+                  <div class="road horizontal" style="top: 80%"></div>
+                  <div class="road vertical" style="left: 25%"></div>
+                  <div class="road vertical" style="left: 50%"></div>
+                  <div class="road vertical" style="left: 75%"></div>
+                </div>
+                
+                <!-- Map markers for units and incidents -->
+                <div class="map-markers">
+                  <!-- Police Units -->
+                  <div class="map-marker unit" style="top: 15%; left: 20%;" data-id="Unit-4">
+                    <div class="marker-icon">🚓</div>
+                    <div class="marker-tooltip">Unit 4 - Available</div>
+                  </div>
+                  <div class="map-marker unit" style="top: 45%; left: 30%;" data-id="Unit-12">
+                    <div class="marker-icon">🚓</div>
+                    <div class="marker-tooltip">Unit 12 - Available</div>
+                  </div>
+                  <div class="map-marker unit busy" style="top: 75%; left: 45%;" data-id="Unit-9">
+                    <div class="marker-icon">🚓</div>
+                    <div class="marker-tooltip">Unit 9 - Traffic Stop</div>
+                  </div>
+                  <div class="map-marker unit busy" style="top: 60%; left: 70%;" data-id="Unit-15">
+                    <div class="marker-icon">🚓</div>
+                    <div class="marker-tooltip">Unit 15 - On Scene</div>
+                  </div>
+                  <div class="map-marker unit responding" style="top: 25%; left: 65%;" data-id="Unit-8">
+                    <div class="marker-icon">🚓</div>
+                    <div class="marker-tooltip">Unit 8 - Responding</div>
+                  </div>
+                  
+                  <!-- Incidents -->
+                  <div class="map-marker incident priority-high" style="top: 60%; left: 72%;" data-id="Call-1572">
+                    <div class="marker-icon">🚨</div>
+                    <div class="marker-tooltip">Robbery in Progress - ID: #24-1572</div>
+                  </div>
+                  <div class="map-marker incident priority-medium" style="top: 48%; left: 50%;" data-id="Call-1571">
+                    <div class="marker-icon">🚦</div>
+                    <div class="marker-tooltip">Traffic Accident - ID: #24-1571</div>
+                  </div>
+                  <div class="map-marker incident priority-low" style="top: 25%; left: 35%;" data-id="Call-1570">
+                    <div class="marker-icon">🔊</div>
+                    <div class="marker-tooltip">Noise Complaint - ID: #24-1570</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-details-panel">
+            <div class="panel-header">
+              <h3>Map Details</h3>
+              <button class="close-button" id="close-map-details-btn">×</button>
+            </div>
+            <div class="panel-content">
+              <div id="map-details-content" class="mdt-placeholder">
+                Select a unit or incident on the map to view details
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Warrants Page -->
+        <div class="mdt-page" id="warrants-page">
+          <div class="mdt-section-header">
+            <h2>Active Warrants</h2>
+            <div class="warrant-controls">
+              <button class="mdt-action-button new-warrant-btn">Issue New Warrant</button>
+              <input type="text" placeholder="Search warrants" class="warrant-search-input">
+            </div>
+          </div>
+
+          <div class="warrants-container">
+            <div class="warrants-tabs">
+              <button class="tab-button active" data-tab="active-warrants">Active Warrants</button>
+              <button class="tab-button" data-tab="warrant-approvals">Pending Approval</button>
+              <button class="tab-button" data-tab="served-warrants">Recently Served</button>
+            </div>
+
+            <div class="tab-content active" id="active-warrants-tab">
+              <div class="warrant-list">
+                <div class="warrant-item high-priority">
+                  <div class="warrant-status">ACTIVE - HIGH PRIORITY</div>
+                  <div class="warrant-header">
+                    <div class="warrant-info">
+                      <div class="warrant-id">Warrant #W2025-0187</div>
+                      <div class="warrant-type">Arrest Warrant</div>
+                    </div>
+                    <div class="warrant-issued">
+                      <div>Issued: 03/28/2025</div>
+                      <div>Expires: 06/28/2025</div>
+                    </div>
+                  </div>
+                  <div class="warrant-subject">
+                    <div class="subject-name">James Robert Wilson</div>
+                    <div class="subject-details">DOB: 07/15/1988 (36) | Last Known: 842 Pine Street, Apt 3B</div>
+                  </div>
+                  <div class="warrant-charges">
+                    <div class="charge-header">Charges:</div>
+                    <div class="charge-list">
+                      <span class="charge-item">Aggravated Assault (PC 245)</span>
+                      <span class="charge-item">Armed Robbery (PC 211)</span>
+                      <span class="charge-item">Possession of Stolen Property (PC 496)</span>
+                    </div>
+                  </div>
+                  <div class="warrant-notes">
+                    <p>Subject is known to be armed and dangerous. Use extreme caution when approaching.</p>
+                    <p>Last seen in the Downtown area on 03/25/2025. May be driving a stolen 2023 black Ford F-150, CA plate 7XYZ123.</p>
+                  </div>
+                  <div class="warrant-footer">
+                    <div class="warrant-judge">Authorized by: Judge M. Reynolds</div>
+                    <div class="warrant-actions">
+                      <button class="mdt-action-button view-details-btn">View Full Details</button>
+                      <button class="mdt-action-button update-status-btn">Update Status</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="warrant-item medium-priority">
+                  <div class="warrant-status">ACTIVE</div>
+                  <div class="warrant-header">
+                    <div class="warrant-info">
+                      <div class="warrant-id">Warrant #W2025-0182</div>
+                      <div class="warrant-type">Search Warrant</div>
+                    </div>
+                    <div class="warrant-issued">
+                      <div>Issued: 03/25/2025</div>
+                      <div>Expires: 04/01/2025</div>
+                    </div>
+                  </div>
+                  <div class="warrant-subject">
+                    <div class="subject-name">123 Oak Lane, Residence</div>
+                    <div class="subject-details">Property Owner: Sarah Johnson | Target: Electronic Devices, Financial Records</div>
+                  </div>
+                  <div class="warrant-charges">
+                    <div class="charge-header">Related Case:</div>
+                    <div class="charge-list">
+                      <span class="charge-item">Fraud Investigation (Case #24-0534)</span>
+                    </div>
+                  </div>
+                  <div class="warrant-notes">
+                    <p>Search limited to main residence and detached garage. Electronic devices should be seized for forensic analysis.</p>
+                  </div>
+                  <div class="warrant-footer">
+                    <div class="warrant-judge">Authorized by: Judge T. Mitchell</div>
+                    <div class="warrant-actions">
+                      <button class="mdt-action-button view-details-btn">View Full Details</button>
+                      <button class="mdt-action-button update-status-btn">Update Status</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="warrant-item">
+                  <div class="warrant-status">ACTIVE</div>
+                  <div class="warrant-header">
+                    <div class="warrant-info">
+                      <div class="warrant-id">Warrant #W2025-0179</div>
+                      <div class="warrant-type">Arrest Warrant</div>
+                    </div>
+                    <div class="warrant-issued">
+                      <div>Issued: 03/22/2025</div>
+                      <div>Expires: 06/22/2025</div>
+                    </div>
+                  </div>
+                  <div class="warrant-subject">
+                    <div class="subject-name">Michael Thomas Davis</div>
+                    <div class="subject-details">DOB: 11/04/1992 (32) | Last Known: 517 Maple Drive</div>
+                  </div>
+                  <div class="warrant-charges">
+                    <div class="charge-header">Charges:</div>
+                    <div class="charge-list">
+                      <span class="charge-item">Failure to Appear (PC 853.7)</span>
+                      <span class="charge-item">Probation Violation (PC 1203.2)</span>
+                    </div>
+                  </div>
+                  <div class="warrant-footer">
+                    <div class="warrant-judge">Authorized by: Judge K. Lawrence</div>
+                    <div class="warrant-actions">
+                      <button class="mdt-action-button view-details-btn">View Full Details</button>
+                      <button class="mdt-action-button update-status-btn">Update Status</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-content" id="warrant-approvals-tab">
+              <div class="mdt-placeholder">
+                No warrants pending approval
+              </div>
+            </div>
+
+            <div class="tab-content" id="served-warrants-tab">
+              <div class="mdt-placeholder">
+                Loading recently served warrants...
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Notification Modal -->
+  <div class="notification-modal" id="notification-modal">
+    <div class="notification-content">
+      <div class="notification-header">
+        <h3 id="notification-title">Alert</h3>
+        <button class="close-button" id="close-notification-btn">×</button>
+      </div>
+      <div class="notification-body" id="notification-message">
+        Notification message here
+      </div>
+      <div class="notification-footer">
+        <button class="mdt-action-button" id="acknowledge-notification-btn">Acknowledge</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+  <script src="mdt.js"></script>
+</body>
+</html>
+
+        <!-- Persons Page -->
+        <div class="mdt-page" id="persons-page">
+          <div class="mdt-search-container">
+            <div class="mdt-search-input-group">
+              <input 
+                type="text" 
+                id="persons-search-input" 
+                class="mdt-search-input" 
+                placeholder="Search by name, ID, or DOB"
+              >
+              <button onclick="searchPersons()" class="mdt-search-button">Search</button>
+            </div>
+          </div>
+
+          <div class="mdt-results-container">
+            <div class="mdt-person-profile">
+              <div class="profile-header">
+                <img src="/api/placeholder/100/100" alt="Profile Photo" class="profile-photo">
+                <div class="profile-info">
+                  <h3>John Robert Doe</h3>
+                  <div class="profile-details">
+                    <span>DOB: 03/15/1985 (40)</span>
+                    <span>ID: 850315-4721</span>
+                    <span class="status-flag warning">Flagged: Prior Arrests</span>
+                  </div>
+                </div>
+              </div>
+              <div class="profile-content">
+                <div class="info-section">
+                  <h4>Personal Information</h4>
+                  <div class="info-grid">
+                    <div class="info-item">
+                      <span class="label">Address:</span>
+                      <span>123 Main St, Anytown, USA</span>
+                    </div>
+                    <div class="info-item">
+                      <span class="label">Phone:</span>
+                      <span>(555) 123-4567</span>
+                    </div>
+                    <div class="info-item">
+                      <span class="label">License:</span>
+                      <span>D123456789 (Valid)</span>
+                    </div>
+                    <div class="info-item">
+                      <span class="label">Height/Weight:</span>
+                      <span>5'11" / 180 lbs</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="history-section">
+                  <h4>History</h4>
+                  <div class="history-tabs">
+                    <button class="tab-button active" data-tab="arrests">Arrests</button>
+                    <button class="tab-button" data-tab="citations">Citations</button>
+                    <button class="tab-button" data-tab="incidents">Incidents</button>
+                  </div>
+                  <div class="tab-content active" id="arrests-tab">
+                    <div class="history-item">
+                      <div class="date">02/15/2023</div>
+                      <div class="description">Possession of Controlled Substance</div>
+                      <button class="mdt-action-button small">View</button>
+                    </div>
+                    <div class="history-item">
+                      <div class="date">08/23/2021</div>
+                      <div class="description">DUI - Blood Alcohol 0.11</div>
+                      <button class="mdt-action-button small">View</button>
+                    </div>
+                  </div>
+                  <div class="tab-content" id="citations-tab">
+                    <div class="history-item">
+                      <div class="date">11/04/2023</div>
+                      <div class="description">Speeding (78/55)</div>
+                      <button class="mdt-action-button small">View</button>
+                    </div>
+                    <div class="history-item">
+                      <div class="date">05/17/2022</div>
+                      <div class="description">Expired Registration</div>
+                      <button class="mdt-action-button small">View</button>
+                    </div>
+                  </div>
+                  <div class="tab-content" id="incidents-tab">
+                    <div class="history-item">
+                      <div class="date">03/10/2024</div>
+                      <div class="description">Witness in Hit and Run (Case #24-0327)</div>
+                      <button class="mdt-action-button small">View</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="profile-actions">
+                <button class="mdt-action-button">New Citation</button>
+                <button class="mdt-action-button">New Report</button>
+                <button class="mdt-action-button">Print Record</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vehicles Page -->
+        <div class="mdt-page" id="vehicles-page">
+          <div class="mdt-search-container">
+            <div class="mdt-search-input-group">
+              <input 
+                type="text" 
+                id="vehicle-search-input" 
+                class="mdt-search-input" 
+                placeholder="Enter license plate, VIN, or make/model"
+              >
+              <button onclick="searchVehicles()" class="mdt-search-button">Search</button>
+            </div>
+          </div>
+
+          <div class="mdt-results-container" id="vehicle-results">
+            <div class="mdt-placeholder">
+              Vehicle information will appear here
+            </div>
+          </div>
+        </div>
+
+        <!-- Reports Page -->
+        <div class="mdt-page" id="reports-page">
+          <div class="mdt-section-header">
+            <h2>Reports Management</h2>
+            <button class="mdt-action-button">Create New Report</button>
+          </div>
+
+          <div class="mdt-reports-tabs">
+            <button class="tab-button active" data-tab="my-reports">My Reports</button>
+            <button class="tab-button" data-tab="pending-approval">Pending Approval</button>
+            <button class="tab-button" data-tab="recent-reports">Recent Department Reports</button>
+          </div>
+
+          <div class="tab-content active" id="my-reports-tab">
+            <div class="mdt-reports-list">
+              <div class="mdt-report-item">
+                <div class="report-info">
+                  <div class="report-id">Case #24-0572</div>
+                  <div class="report-title">Shoplifting at Downtown Market</div>
+                  <div class="report-details">
+                    <span>Created: 03/30/2025</span>
+                    <span>Status: Draft</span>
+                  </div>
+                </div>
+                <div class="report-actions">
+                  <button class="mdt-action-button">Edit</button>
+                  <button class="mdt-action-button">Submit</button>
+                </div>
+              </div>
+
+              <div class="mdt-report-item">
+                <div class="report-info">
+                  <div class="report-id">Case #24-0567</div>
+                  <div class="report-title">Traffic Stop - DUI Arrest</div>
+                  <div class="report-details">
+                    <span>Created: 03/29/2025</span>
+                    <span>Status: Submitted</span>
+                  </div>
+                </div>
+                <div class="report-actions">
+                  <button class="mdt-action-button">View</button>
+                  <button class="mdt-action-button">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content" id="pending-approval-tab">
+            <div class="mdt-placeholder">
+              No reports pending approval
+            </div>
+          </div>
+
+          <div class="tab-content" id="recent-reports-tab">
+            <div class="mdt-placeholder">
+              Loading recent department reports...
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Notification Modal -->
+  <div class="notification-modal" id="notification-modal">
+    <div class="notification-content">
+      <div class="notification-header">
+        <h3 id="notification-title">Alert</h3>
+        <button class="close-button" onclick="closeNotification()">&times;</button>
+      </div>
+      <div class="notification-body" id="notification-message">
+        Notification message here
+      </div>
+      <div class="notification-footer">
+        <button class="mdt-action-button" onclick="closeNotification()">Acknowledge</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Bulletins Page -->
+  <div class="mdt-page" id="bulletins-page">
+    <div class="mdt-section-header">
+      <h2>Department Bulletins</h2>
+      <div class="bulletin-controls">
+        <button class="mdt-action-button">New Bulletin</button>
+        <select id="bulletin-filter">
+          <option value="all">All Bulletins</option>
+          <option value="bolo">BOLO</option>
+          <option value="announcement">Announcements</option>
+          <option value="alert">Alerts</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="bulletins-container">
+      <div class="bulletin-item bolo">
+        <div class="bulletin-header">
+          <div class="bulletin-type">BOLO</div>
+          <div class="bulletin-time">Posted: 03/30/2025 09:15 AM</div>
+        </div>
+        <div class="bulletin-title">Armed Robbery Suspect</div>
+        <div class="bulletin-content">
+          <p>Be on the lookout for a white male, 30-40 years old, approximately 6'0", medium build, with a distinctive dragon tattoo on right forearm. Last seen wearing a black hoodie and blue jeans.</p>
+          <p>Suspect is wanted in connection with the armed robbery at First National Bank on 03/29/2025. Suspect was armed with a handgun and should be considered dangerous.</p>
+          <div class="bulletin-attachments">
+            <div class="attachment">
+              <svg viewBox="0 0 24 24" width="16" height="16">
+                <path fill="currentColor" d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"/>
+              </svg>
+              <span>Surveillance Image 1</span>
+            </div>
+            <div class="attachment">
+              <svg viewBox="0 0 24 24" width="16" height="16">
+                <path fill="currentColor" d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-4.86 8.86l-3 3.87L9 13.14 6 17h12l-3.86-5.14z"/>
+              </svg>
+              <span>Surveillance Image 2</span>
+            </div>
+          </div>
+        </div>
+        <div class="bulletin-footer">
+          <span class="bulletin-author">Issued by: Sgt. Williams</span>
+          <div class="bulletin-actions">
+            <button class="mdt-action-button small">Flag as Resolved</button>
+            <button class="mdt-action-button small">Add Info</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bulletin-item announcement">
+        <div class="bulletin-header">
+          <div class="bulletin-type">Announcement</div>
+          <div class="bulletin-time">Posted: 03/29/2025 10:30 AM</div>
+        </div>
+        <div class="bulletin-title">Training Schedule Update</div>
+        <div class="bulletin-content">
+          <p>The firearms qualification scheduled for Tuesday, April 1st has been moved to Thursday, April 3rd due to range maintenance. All officers are required to attend their assigned time slot.</p>
+          <p>Please check the updated schedule on the department intranet for your assigned time.</p>
+        </div>
+        <div class="bulletin-footer">
+          <span class="bulletin-author">Issued by: Lt. Rodriguez</span>
+          <div class="bulletin-actions">
+            <button class="mdt-action-button small">Acknowledge</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bulletin-item alert">
+        <div class="bulletin-header">
+          <div class="bulletin-type">Alert</div>
+          <div class="bulletin-time">Posted: 03/28/2025 02:15 PM</div>
+        </div>
+        <div class="bulletin-title">System Maintenance Notice</div>
+        <div class="bulletin-content">
+          <p>The CAD/RMS system will undergo scheduled maintenance on Sunday, April 6th from 0200-0500 hours. During this time, the system may experience intermittent outages.</p>
+          <p>Please use radio communications and paper logs during this period if necessary.</p>
+        </div>
+        <div class="bulletin-footer">
+          <span class="bulletin-author">Issued by: IT Department</span>
+          <div class="bulletin-actions">
+            <button class="mdt-action-button small">Acknowledge</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Map Page -->
+  <div class="mdt-page" id="map-page">
+    <div class="map-controls">
+      <div class="map-search">
+        <input type="text" placeholder="Search address or location" class="map-search-input">
+        <button class="mdt-action-button">Go</button>
+      </div>
+      <div class="map-filter">
+        <label><input type="checkbox" checked> Active Units</label>
+        <label><input type="checkbox" checked> Active Calls</label>
+        <label><input type="checkbox"> Recent Incidents</label>
+        <label><input type="checkbox"> Traffic Cameras</label>
+      </div>
+    </div>
+
+    <div class="map-container">
+      <div class="city-map" id="cityMap">
+        <!-- Map Placeholder - Would be replaced with actual map implementation -->
+        <div class="map-grid">
+          <!-- Stylized grid and roads to simulate a map -->
+          <div class="map-roads">
+            <div class="road horizontal" style="top: 20%"></div>
+            <div class="road horizontal" style="top: 50%"></div>
+            <div class="road horizontal" style="top: 80%"></div>
+            <div class="road vertical" style="left: 25%"></div>
+            <div class="road vertical" style="left: 50%"></div>
+            <div class="road vertical" style="left: 75%"></div>
+          </div>
+          
+          <!-- Map markers for units and incidents -->
+          <div class="map-markers">
+            <!-- Police Units -->
+            <div class="map-marker unit" style="top: 15%; left: 20%;" data-id="Unit-4">
+              <div class="marker-icon">🚓</div>
+              <div class="marker-tooltip">Unit 4 - Available</div>
+            </div>
+            <div class="map-marker unit" style="top: 45%; left: 30%;" data-id="Unit-12">
+              <div class="marker-icon">🚓</div>
+              <div class="marker-tooltip">Unit 12 - Available</div>
+            </div>
+            <div class="map-marker unit busy" style="top: 75%; left: 45%;" data-id="Unit-9">
+              <div class="marker-icon">🚓</div>
+              <div class="marker-tooltip">Unit 9 - Traffic Stop</div>
+            </div>
+            <div class="map-marker unit busy" style="top: 60%; left: 70%;" data-id="Unit-15">
+              <div class="marker-icon">🚓</div>
+              <div class="marker-tooltip">Unit 15 - On Scene</div>
+            </div>
+            <div class="map-marker unit responding" style="top: 25%; left: 65%;" data-id="Unit-8">
+              <div class="marker-icon">🚓</div>
+              <div class="marker-tooltip">Unit 8 - Responding</div>
+            </div>
+            
+            <!-- Incidents -->
+            <div class="map-marker incident priority-high" style="top: 60%; left: 72%;" data-id="Call-1572">
+              <div class="marker-icon">🚨</div>
+              <div class="marker-tooltip">Robbery in Progress - ID: #24-1572</div>
+            </div>
+            <div class="map-marker incident priority-medium" style="top: 48%; left: 50%;" data-id="Call-1571">
+              <div class="marker-icon">🚦</div>
+              <div class="marker-tooltip">Traffic Accident - ID: #24-1571</div>
+            </div>
+            <div class="map-marker incident priority-low" style="top: 25%; left: 35%;" data-id="Call-1570">
+              <div class="marker-icon">🔊</div>
+              <div class="marker-tooltip">Noise Complaint - ID: #24-1570</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="map-details-panel">
+      <div class="panel-header">
+        <h3>Map Details</h3>
+        <button class="close-button" onclick="closeMapDetails()">×</button>
+      </div>
+      <div class="panel-content">
+        <div id="map-details-content" class="mdt-placeholder">
+          Select a unit or incident on the map to view details
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Warrants Page -->
+  <div class="mdt-page" id="warrants-page">
+    <div class="mdt-section-header">
+      <h2>Active Warrants</h2>
+      <div class="warrant-controls">
+        <button class="mdt-action-button">Issue New Warrant</button>
+        <input type="text" placeholder="Search warrants" class="warrant-search-input">
+      </div>
+    </div>
+
+    <div class="warrants-container">
+      <div class="warrants-tabs">
+        <button class="tab-button active" data-tab="active-warrants">Active Warrants</button>
+        <button class="tab-button" data-tab="warrant-approvals">Pending Approval</button>
+        <button class="tab-button" data-tab="served-warrants">Recently Served</button>
+      </div>
+
+      <div class="tab-content active" id="active-warrants-tab">
+        <div class="warrant-list">
+          <div class="warrant-item high-priority">
+            <div class="warrant-status">ACTIVE - HIGH PRIORITY</div>
+            <div class="warrant-header">
+              <div class="warrant-info">
+                <div class="warrant-id">Warrant #W2025-0187</div>
+                <div class="warrant-type">Arrest Warrant</div>
+              </div>
+              <div class="warrant-issued">
+                <div>Issued: 03/28/2025</div>
+                <div>Expires: 06/28/2025</div>
+              </div>
+            </div>
+            <div class="warrant-subject">
+              <div class="subject-name">James Robert Wilson</div>
+              <div class="subject-details">DOB: 07/15/1988 (36) | Last Known: 842 Pine Street, Apt 3B</div>
+            </div>
+            <div class="warrant-charges">
+              <div class="charge-header">Charges:</div>
+              <div class="charge-list">
+                <span class="charge-item">Aggravated Assault (PC 245)</span>
+                <span class="charge-item">Armed Robbery (PC 211)</span>
+                <span class="charge-item">Possession of Stolen Property (PC 496)</span>
+              </div>
+            </div>
+            <div class="warrant-notes">
+              <p>Subject is known to be armed and dangerous. Use extreme caution when approaching.</p>
+              <p>Last seen in the Downtown area on 03/25/2025. May be driving a stolen 2023 black Ford F-150, CA plate 7XYZ123.</p>
+            </div>
+            <div class="warrant-footer">
+              <div class="warrant-judge">Authorized by: Judge M. Reynolds</div>
+              <div class="warrant-actions">
+                <button class="mdt-action-button">View Full Details</button>
+                <button class="mdt-action-button">Update Status</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="warrant-item medium-priority">
+            <div class="warrant-status">ACTIVE</div>
+            <div class="warrant-header">
+              <div class="warrant-info">
+                <div class="warrant-id">Warrant #W2025-0182</div>
+                <div class="warrant-type">Search Warrant</div>
+              </div>
+              <div class="warrant-issued">
+                <div>Issued: 03/25/2025</div>
+                <div>Expires: 04/01/2025</div>
+              </div>
+            </div>
+            <div class="warrant-subject">
+              <div class="subject-name">123 Oak Lane, Residence</div>
+              <div class="subject-details">Property Owner: Sarah Johnson | Target: Electronic Devices, Financial Records</div>
+            </div>
+            <div class="warrant-charges">
+              <div class="charge-header">Related Case:</div>
+              <div class="charge-list">
+                <span class="charge-item">Fraud Investigation (Case #24-0534)</span>
+              </div>
+            </div>
+            <div class="warrant-notes">
+              <p>Search limited to main residence and detached garage. Electronic devices should be seized for forensic analysis.</p>
+            </div>
+            <div class="warrant-footer">
+              <div class="warrant-judge">Authorized by: Judge T. Mitchell</div>
+              <div class="warrant-actions">
+                <button class="mdt-action-button">View Full Details</button>
+                <button class="mdt-action-button">Update Status</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="warrant-item">
+            <div class="warrant-status">ACTIVE</div>
+            <div class="warrant-header">
+              <div class="warrant-info">
+                <div class="warrant-id">Warrant #W2025-0179</div>
+                <div class="warrant-type">Arrest Warrant</div>
+              </div>
+              <div class="warrant-issued">
+                <div>Issued: 03/22/2025</div>
+                <div>Expires: 06/22/2025</div>
+              </div>
+            </div>
+            <div class="warrant-subject">
+              <div class="subject-name">Michael Thomas Davis</div>
+              <div class="subject-details">DOB: 11/04/1992 (32) | Last Known: 517 Maple Drive</div>
+            </div>
+            <div class="warrant-charges">
+              <div class="charge-header">Charges:</div>
+              <div class="charge-list">
+                <span class="charge-item">Failure to Appear (PC 853.7)</span>
+                <span class="charge-item">Probation Violation (PC 1203.2)</span>
+              </div>
+            </div>
+            <div class="warrant-footer">
+              <div class="warrant-judge">Authorized by: Judge K. Lawrence</div>
+              <div class="warrant-actions">
+                <button class="mdt-action-button">View Full Details</button>
+                <button class="mdt-action-button">Update Status</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="warrant-approvals-tab">
+        <div class="mdt-placeholder">
+          No warrants pending approval
+        </div>
+      </div>
+
+      <div class="tab-content" id="served-warrants-tab">
+        <div class="mdt-placeholder">
+          Loading recently served warrants...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="mdt.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+  <script>
+    // Initialize charts when DOM is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      initializeCharts();
+      setupMapInteractions();
+    });
+
+    function initializeCharts() {
+      // Department Activity Chart - Line Chart
+      const activityCtx = document.getElementById('activityChart');
+      if (activityCtx) {
+        new Chart(activityCtx, {
+          type: 'line',
+          data: {
+            labels: ['6AM', '8AM', '10AM', '12PM', '2PM', '4PM', '6PM', '8PM', '10PM', '12AM', '2AM', '4AM'],
+            datasets: [{
+              label: 'Calls Volume',
+              data: [5, 8, 12, 15, 18, 22, 25, 30, 22, 18, 10, 7],
+              borderColor: '#3498db',
+              backgroundColor: 'rgba(52, 152, 219, 0.1)',
+              tension: 0.4,
+              fill: true
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: {
+                display: false
+              },
+              tooltip: {
+                mode: 'index',
+                intersect: false
+              }
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                grid: {
+                  color: 'rgba(255, 255, 255, 0.1)'
+                },
+                ticks: {
+                  color: '#bdc3c7'
+                }
+              },
+              x: {
+                grid: {
+                  display: false
+                },
+                ticks: {
+                  color: '#bdc3c7'
+                }
+              }
+            }
+          }
+        });
+      }
+
+      // Crime Types Chart - Pie Chart
+      const crimeTypesCtx = document.getElementById('crimeTypesChart');
+      if (crimeTypesCtx) {
+        new Chart(crimeTypesCtx, {
+          type: 'doughnut',
+          data: {
+            labels: ['Theft', 'Assault', 'Burglary', 'DUI', 'Disturbance', 'Other'],
+            datasets: [{
+              data: [35, 20, 15, 12, 10, 8],
+              backgroundColor: [
+                '#3498db',
+                '#e74c3c',
+                '#f39c12',
+                '#2ecc71',
+                '#9b59b6',
+                '#34495e'
+              ],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: {
+                position: 'right',
+                labels: {
+                  color: '#ecf0f1',
+                  padding: 10,
+                  font: {
+                    size: 11
+                  }
+                }
+              }
+            }
+          }
+        });
+      }
+
+      // Crime Locations Chart - Bar Chart
+      const crimeLocationCtx = document.getElementById('crimeLocationChart');
+      if (crimeLocationCtx) {
+        new Chart(crimeLocationCtx, {
+          type: 'bar',
+          data: {
+            labels: ['Downtown', 'Northside', 'Westend', 'Eastside', 'Southside'],
+            datasets: [{
+              label: 'Incident Count',
+              data: [42, 28, 22, 18, 15],
+              backgroundColor: '#3498db',
+              barThickness: 15,
+              borderRadius: 4
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: {
+                display: false
+              }
+            },
+            scales: {
+              y: {
+                beginAtZero: true,
+                grid: {
+                  color: 'rgba(255, 255, 255, 0.1)'
+                },
+                ticks: {
+                  color: '#bdc3c7'
+                }
+              },
+              x: {
+                grid: {
+                  display: false
+                },
+                ticks: {
+                  color: '#bdc3c7'
+                }
+              }
+            }
+          }
+        });
+      }
+    }
+
+    function setupMapInteractions() {
+      // Add event listeners to map markers
+      const mapMarkers = document.querySelectorAll('.map-marker');
+      const mapDetailsContent = document.getElementById('map-details-content');
+
+      mapMarkers.forEach(marker => {
+        marker.addEventListener('click', function() {
+          const markerId = this.getAttribute('data-id');
+          const markerType = this.classList.contains('unit') ? 'unit' : 'incident';
+          
+          // Update the details panel with info about the selected marker
+          if (markerType === 'unit') {
+            const unitDetails = getUnitDetails(markerId);
+            if (mapDetailsContent) {
+              mapDetailsContent.innerHTML = unitDetails;
+            }
+          } else {
+            const incidentDetails = getIncidentDetails(markerId);
+            if (mapDetailsContent) {
+              mapDetailsContent.innerHTML = incidentDetails;
+            }
+          }
+          
+          // Show the details panel if it's not already visible
+          const detailsPanel = document.querySelector('.map-details-panel');
+          if (detailsPanel) {
+            detailsPanel.classList.add('active');
+          }
+        });
+      });
+    }
+
+    function getUnitDetails(unitId) {
+      // This would fetch real data in a production environment
+      const unitData = {
+        'Unit-4': {
+          id: 'Unit 4',
+          officer: 'Officer Martinez',
+          badge: '#5819',
+          status: 'Available',
+          vehicle: 'Ford Explorer SUV',
+          location: 'Patrol District 2',
+          lastUpdate: '10:43 AM'
+        },
+        'Unit-8': {
+          id: 'Unit 8',
+          officer: 'Officer Brown',
+          badge: '#6023',
+          status: 'Responding to Call',
+          vehicle: 'Dodge Charger',
+          location: 'En route to 123 Elm Street',
+          lastUpdate: '10:41 AM'
+        },
+        'Unit-9': {
+          id: 'Unit 9',
+          officer: 'Officer Taylor',
+          badge: '#5742',
+          status: 'On Scene',
+          vehicle: 'Ford Explorer SUV',
+          location: '185 Oak Street, Downtown',
+          lastUpdate: '10:35 AM'
+        },
+        'Unit-12': {
+          id: 'Unit 12',
+          officer: 'Officer Johnson',
+          badge: '#5472',
+          status: 'Available',
+          vehicle: 'Ford Explorer SUV',
+          location: 'Patrol District 3',
+          lastUpdate: '10:40 AM'
+        },
+        'Unit-15': {
+          id: 'Unit 15',
+          officer: 'Sgt. Williams',
+          badge: '#4821',
+          status: 'Traffic Stop',
+          vehicle: 'Chevrolet Tahoe',
+          location: 'Main St & 5th Ave',
+          lastUpdate: '10:36 AM'
+        }
+      };
+
+      const unit = unitData[unitId] || { id: unitId, status: 'Unknown' };
+      
+      return `
+        <div class="unit-details">
+          <h3>${unit.id} - ${unit.officer}</h3>
+          <div class="detail-item">
+            <span class="detail-label">Badge:</span>
+            <span class="detail-value">${unit.badge}</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Status:</span>
+            <span class="detail-value">${unit.status}</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Vehicle:</span>
+            <span class="detail-value">${unit.vehicle}</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Location:</span>
+            <span class="detail-value">${unit.location}</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Last Update:</span>
+            <span class="detail-value">${unit.lastUpdate}</span>
+          </div>
+          <div class="detail-actions">
+            <button class="mdt-action-button">Contact Unit</button>
+            <button class="mdt-action-button">Dispatch to Call</button>
+          </div>
+        </div>
+      `;
+    }
+
+    function getIncidentDetails(callId) {
+      // This would fetch real data in a production environment
+      const callData = {
+        'Call-1570': {
+          id: '#24-1570',
+          type: 'Noise Complaint',
+          location: '472 Pine Apartments, Unit 3B',
+          time: '10:15 AM (21 min ago)',
+          priority: 'Low',
+          caller: 'Anonymous',
+          description: 'Caller reports loud music coming from neighboring apartment. Ongoing issue.',
+          units: 'None assigned'
+        },
+        'Call-1571': {
+          id: '#24-1571',
+          type: 'Traffic Accident',
+          location: 'Main St & 5th Ave',
+          time: '10:28 AM (8 min ago)',
+          priority: 'Medium',
+          caller: 'John Smith',
+          description: 'Two-vehicle collision, minor injuries reported. Lane blocked.',
+          units: 'Unit 15 on scene'
+        },
+        'Call-1572': {
+          id: '#24-1572',
+          type: 'Robbery in Progress',
+          location: '185 Oak Street, Downtown',
+          time: '10:32 AM (4 min ago)',
+          priority: 'High',
+          caller: 'Store Employee',
+          description: 'Armed subject demanding cash from register. Weapon displayed.',
+          units: 'Unit 9 on scene, Unit 8 responding'
+        }
+      };
+
+      const call = callData[callId] || { id: callId, type: 'Unknown' };
+      
+      return `
+        <div class="incident-details">
+          <h3>Incident ${call.id}</h3>
+          <div class="detail-item">
+            <span class="detail-label">Type:</span>
+            <span class="detail-value">${call.type}</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Location:</span>
+            <span class="detail-value">${call.location}</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Received:</span>
+            <span class="detail-value">${call.time}</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Priority:</span>
+            <span class="detail-value priority-${call.priority.toLowerCase()}">${call.priority}</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Caller:</span>
+            <span class="detail-value">${call.caller}</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Description:</span>
+            <span class="detail-value">${call.description}</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Units Assigned:</span>
+            <span class="detail-value">${call.units}</span>
+          </div>
+          <div class="detail-actions">
+            <button class="mdt-action-button">Assign Unit</button>
+            <button class="mdt-action-button">Update Status</button>
+            <button class="mdt-action-button">Create Report</button>
+          </div>
+        </div>
+      `;
+    }
+
+    // Function to update crime statistics based on selected period
+    function updateCrimeStats() {
+      const period = document.getElementById('stats-period').value;
+      // In a real application, this would fetch new data and update the charts
+      console.log(`Updating crime stats for period: ${period}`);
+      
+      // For demo purposes, we're just showing a notification
+      showNotification('Statistics Updated', `Crime statistics now showing data for ${period}`);
+    }
+
+    // Function to refresh activity feed
+    function refreshActivity() {
+      const activityFeed = document.querySelector('.activity-feed');
+      
+      // Add a loading indicator
+      if (activityFeed) {
+        activityFeed.innerHTML = '<div class="loading-indicator">Refreshing activity feed...</div>';
+        
+        // Simulate API call delay
+        setTimeout(() => {
+          // In a real application, this would fetch new data
+          activityFeed.innerHTML = `
+            <div class="activity-item new-activity">
+              <span class="activity-time">10:47 AM</span>
+              <span class="activity-badge call">911 CALL</span>
+              <span class="activity-text">Medical emergency at 312 Birch Lane</span>
+            </div>
+            <div class="activity-item">
+              <span class="activity-time">10:45 AM</span>
+              <span class="activity-badge arrest">ARREST</span>
+              <span class="activity-text">Officer Wilson - DUI Arrest at 5th & Main</span>
+            </div>
+            <div class="activity-item">
+              <span class="activity-time">10:38 AM</span>
+              <span class="activity-badge incident">INCIDENT</span>
+              <span class="activity-text">Vehicle accident reported at Highway 101 N</span>
+            </div>
+            <div class="activity-item">
+              <span class="activity-time">10:30 AM</span>
+              <span class="activity-badge call">911 CALL</span>
+              <span class="activity-text">Domestic disturbance at 123 Elm Street</span>
+            </div>
+            <div class="activity-item">
+              <span class="activity-time">10:22 AM</span>
+              <span class="activity-badge report">REPORT</span>
+              <span class="activity-text">Officer Johnson filed report #24-0578</span>
+            </div>
+          `;
+          
+          // Highlight new activity
+          const newActivity = document.querySelector('.new-activity');
+          if (newActivity) {
+            newActivity.style.animation = 'highlightNew 2s';
+          }
+        }, 1000);
+      }
+    }
+
+    // Function to close search results panel
+    function closeSearchResults() {
+      const searchResultsPanel = document.getElementById('search-results-panel');
+      if (searchResultsPanel) {
+        searchResultsPanel.style.display = 'none';
+      }
+    }
+    
+    // Function to close map details panel
+    function closeMapDetails() {
+      const mapDetailsPanel = document.querySelector('.map-details-panel');
+      if (mapDetailsPanel) {
+        mapDetailsPanel.classList.remove('active');
+      }
+    }
+  </script>
+</body>
+</html>
